@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rclone Cloud Backup</title>
+  <meta name="description" content="Information about a personal cloud backup setup using rclone.">
+  <style>
+    :root { color-scheme: light; --navy:#183153; --blue:#315b91; --bg:#f5f7fb; --muted:#5c6675; }
+    * { box-sizing: border-box; }
+    body { margin:0; font:16px/1.65 system-ui,-apple-system,Segoe UI,Roboto,sans-serif; color:#263241; background:var(--bg); }
+    header { background:var(--navy); color:white; padding:64px 22px; }
+    .wrap { max-width:900px; margin:auto; }
+    h1 { font-size:clamp(2rem,5vw,3.2rem); line-height:1.15; margin:0 0 14px; }
+    header p { max-width:680px; margin:0; color:#e2eaf5; font-size:1.1rem; }
+    main { max-width:900px; margin:32px auto; padding:0 22px; }
+    section { background:white; border-radius:14px; padding:26px; margin:18px 0; box-shadow:0 4px 18px #162b4610; }
+    h2 { color:var(--navy); margin-top:0; }
+    a { color:var(--blue); }
+    nav { display:flex; gap:20px; flex-wrap:wrap; margin-top:24px; }
+    footer { max-width:900px; margin:30px auto; padding:0 22px 35px; color:var(--muted); font-size:.9rem; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <h1>Rclone Cloud Backup</h1>
+      <p>Information about a cloud backup workflow that uses rclone to copy files between cloud storage services.</p>
+      <nav>
+        <a href="index.html" style="color:white">Home</a>
+        <a href="privacy.html" style="color:white">Privacy Policy</a>
+        <a href="terms.html" style="color:white">Terms of Service</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section>
+      <h2>About this project</h2>
+      <p>Rclone Cloud Backup is the name used for a personal backup configuration built with <a href="https://rclone.org/">rclone</a>. The intended workflow copies selected folders from a OneDrive account to separate Google Drive destinations.</p>
+      <p>The source OneDrive is treated as the master copy. Google Drive destinations are intended to serve as one-way mirrors or backups. The configuration and schedule are managed by the account owner on their own computer.</p>
+    </section>
+    <section>
+      <h2>How it works</h2>
+      <p>Rclone is run by the account owner on their device. It connects to cloud storage accounts that the owner has explicitly configured and authorized. Depending on the operation and provider capabilities, file data may be transferred directly between providers or through the owner's device.</p>
+      <p>This website is an informational page. It does not provide a hosted backup service or operate the rclone process.</p>
+    </section>
+    <section>
+      <h2>Policies and contact</h2>
+      <p>Please read the <a href="privacy.html">Privacy Policy</a> and <a href="terms.html">Terms of Service</a>.</p>
+      <p>For questions about this specific backup configuration, contact the person who manages the rclone setup.</p>
+    </section>
+  </main>
+  <footer>Rclone Cloud Backup is an independently configured project and is not affiliated with, endorsed by, or operated by Google, Microsoft, or the rclone project.</footer>
+</body>
+</html>
